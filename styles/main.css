@@ -13,8 +13,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding-top: 50px;
-    padding-bottom: 27px;
+    padding: 30px 0 15px;
 }
 .header-item {
     display: flex;
@@ -30,13 +29,14 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
 }
-.header-nav {
+.header-nav, .header-nav-modal {
     list-style-type: none;
     display: flex;
     /*padding-left: 0;*/
     gap: 5.5rem;
+    padding-left: 0;
 }
-.header-nav a {
+.header-nav a, .header-nav-modal a {
     font-weight: 400;
     font-size: 18px;
     color: #2B3541;
@@ -162,7 +162,7 @@ body {
 }
 .btn-down {
     display: block;
-    background-image: url(../icons/arrow.svg);
+    background-image: url(../images/arrow.svg);
     width: 52px;
     height: 55px;
     background-repeat: no-repeat;
@@ -718,7 +718,7 @@ h3 {
 /* -- Модал --*/ 
 
 .modal-burger {
-    background-image: url(../icons/burger.png);
+    background-image: url(../images/burger\ 1.png);
     width: 29px;
     height: 22px;
     border-color: transparent;
@@ -730,7 +730,7 @@ h3 {
     
 }
 .modal-logo {
-    background-image: url(../icons/logo.svg);
+    background-image: url(../images/logo\ \(3\).png);
     display: block;
     width: 78px;
     height: 24px;
@@ -902,7 +902,8 @@ h3 {
     outline: none;
 }
 
-/* медиа */
+
+/* медиа адаптив*/
 
 @media (max-width: 1520px) {
     .banner-box-gradient {
@@ -922,6 +923,8 @@ h3 {
         right: 85px;
     }
 }
+
+
 @media (max-width: 1175px) {
     .header-logo {
         margin-right: 58px;
@@ -944,6 +947,7 @@ h3 {
         top: 135px;
     }
 }
+
 @media (min-width: 901px) {
     .modal-burger {
         display: none;
@@ -1013,6 +1017,7 @@ h3 {
     h3 {
         font-size: 26px;
     }
+
     .event-grid {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
@@ -1034,14 +1039,14 @@ h3 {
     }
     .event-three:nth-child(3) {
         grid-area: c;
-        background-image: url(../files/Vebinar2_2.png);
+        background-image: url(../images/3\ \(2\).png);
         height: 50vw;
         width: 100%;
     }
     .btn-mobile {
         display: block;
         position: absolute;
-        background-image: url(../icons/btn-mobile.png);
+        background-image: url(../images/add.png);
         height: 30px;
         width: 30px;
         right: 0;
@@ -1053,6 +1058,8 @@ h3 {
         left: 0;
         right: auto;    
     }
+
+    
     .date {
         font-weight: 700;
         font-size: 12px;
@@ -1191,7 +1198,6 @@ h3 {
         font-size: 16px;
         opacity: .6;
     }
-
     .footer-box {
         display: block;
     }
@@ -1271,7 +1277,7 @@ h3 {
     }
 
     .company-img-mini {
-        background: linear-gradient(180deg, rgba(251, 241, 56, 0.3) 0%, rgba(253, 249, 182, 0) 100%), url(../files/trainer.png);
+        background: linear-gradient(180deg, rgba(251, 241, 56, 0.3) 0%, rgba(253, 249, 182, 0) 100%), url(../images/Image.png);
         width: 100%;
         height: 55vw;
         background-position: center;
@@ -1288,6 +1294,12 @@ h3 {
     .time-title {
         max-width: 230px;
     }
+    .time-title {
+        font-weight: 700;
+        font-size: 26px;
+        line-height: 125%;
+        color: #2B3541;
+    }
     .time-header {
         margin-bottom: 20px;
     }
@@ -1300,9 +1312,6 @@ h3 {
 
     
 }
-
-
-
 @media (max-width: 560px){
     .banner-box-gradient {
         position: relative;
@@ -1384,6 +1393,8 @@ h3 {
     .law {
         font-size: 12px
     }
+
+
 
     .popup {
         max-width: 400px;
